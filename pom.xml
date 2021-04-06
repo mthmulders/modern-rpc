@@ -17,6 +17,23 @@
     </properties>
 
     <modules>
+        <module>shared/core</module>
+        <module>shared/rmi</module>
+        <module>shared/soap</module>
+        <module>shared/rest</module>
+        <module>shared/grpc</module>
+
+        <module>server/core</module>
+        <module>server/rmi</module>
+        <module>server/soap</module>
+        <module>server/rest</module>
+        <module>server/grpc</module>
+
+        <module>client/core</module>
+        <module>client/rmi</module>
+        <module>client/soap</module>
+        <module>client/rest</module>
+        <module>client/grpc</module>
     </modules>
 
     <dependencyManagement>
