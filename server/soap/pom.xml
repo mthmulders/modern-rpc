@@ -7,7 +7,7 @@
         <groupId>it.mulders.modern-rpc</groupId>
         <artifactId>modern-rpc</artifactId>
         <version>0.1-SNAPSHOT</version>
-        <relativePath>../../</relativePath>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>server-soap</artifactId>
