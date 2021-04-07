@@ -52,6 +52,89 @@
                 <version>3.19.0</version>
                 <scope>test</scope>
             </dependency>
+
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>shared-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>shared-rmi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>shared-soap</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>shared-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>shared-grpc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>server-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>server-rmi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>server-soap</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>server-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>server-grpc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>server-assembly</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>client-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>client-rmi</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>client-soap</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>client-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>client-grpc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
