@@ -1,10 +1,7 @@
-package it.mulders.modernrpc;
+package it.mulders.modernrpc.server.core;
 
 import org.assertj.core.api.WithAssertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -49,6 +46,6 @@ class FibonacciCalculatorTest implements WithAssertions {
 
     @Test
     void result_has_duration() {
-        assertThat(calculator.fibonacci(20).duration()).isGreaterThan(1);
+        assertThat(calculator.fibonacci(30).duration()).isGreaterThan(1);
     }
 }

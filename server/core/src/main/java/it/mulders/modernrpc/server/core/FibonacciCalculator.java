@@ -1,4 +1,6 @@
-package it.mulders.modernrpc;
+package it.mulders.modernrpc.server.core;
+
+import it.mulders.modernrpc.shared.core.FibonacciOutput;
 
 public class FibonacciCalculator {
     public FibonacciOutput fibonacci(final int input) {
