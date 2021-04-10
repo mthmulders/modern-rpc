@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.ServiceLoader;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 
 import static java.util.stream.Collectors.toList;
@@ -22,15 +21,7 @@ public class FibonacciServer {
 
         var calculator = new FibonacciCalculator();
 
-        var threadFactory = new ThreadFactory() {
-            @Override
-            public Thread newThread(final Runnable r) {
-                var thread = new Thread(r);
-                return thread;
-            }
-        };
-
-        var executorService = Executors.newFixedThreadPool(8, threadFactory);
+        var executorService = Executors.newFixedThreadPool(8);
 
         var strategies = findServerStrategies();
 
