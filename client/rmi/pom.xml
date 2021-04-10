@@ -12,4 +12,11 @@
 
     <artifactId>client-rmi</artifactId>
     <name>Modern RPC - Client - RMI</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>it.mulders.modern-rpc</groupId>
+            <artifactId>shared-rmi</artifactId>
+        </dependency>
+    </dependencies>
 </project>
