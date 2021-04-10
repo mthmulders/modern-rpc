@@ -10,7 +10,7 @@ public class FibonacciCalculator {
         return new FibonacciOutput(result, end - start);
     }
 
-    private int calculateFibonacci(final int input) {
+    private long calculateFibonacci(final int input) {
         if (input == 0) return 0;
         if (input == 1) return 1;
 

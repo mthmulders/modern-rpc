@@ -40,7 +40,7 @@ class FibonacciCalculatorTest implements WithAssertions {
 
     @MethodSource( "fibonacciTestcases")
     @ParameterizedTest(name = "fibonacci({0}) = {1}")
-    void test_fibonacci_number(final int input, final int output) {
+    void test_fibonacci_number(final int input, final long output) {
         assertThat(calculator.fibonacci(input).result()).isEqualTo(output);
     }
 

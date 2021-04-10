@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class FibonacciOutput implements Serializable {
     private final long duration;
-    private final int result;
+    private final long result;
 
-    public FibonacciOutput(final int result, final long duration) {
+    public FibonacciOutput(final long result, final long duration) {
         this.duration = duration;
         this.result = result;
     }
@@ -15,7 +15,7 @@ public class FibonacciOutput implements Serializable {
         return this.duration;
     }
 
-    public int getResult() {
+    public long getResult() {
         return this.result;
     }
 }
