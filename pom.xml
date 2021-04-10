@@ -198,6 +198,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.0.0-M5</version>
+                    <configuration>
+                        <argLine>--add-opens fibonacci.server.core/it.mulders.modernrpc.server.core=ALL-UNNAMED</argLine>
+                    </configuration>
                     <dependencies>
                         <dependency>
                             <groupId>org.junit.jupiter</groupId>
