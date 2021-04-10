@@ -29,7 +29,6 @@
         <module>server/rest</module>
         <module>server/grpc</module>
 
-        <module>client/core</module>
         <module>client/rmi</module>
         <module>client/soap</module>
         <module>client/rest</module>
