@@ -1,6 +1,8 @@
 package it.mulders.modernrpc.rmi.shared;
 
-public class FibonacciOutput {
+import java.io.Serializable;
+
+public class FibonacciOutput implements Serializable {
     private final long duration;
     private final int result;
 

@@ -15,8 +15,9 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
+import static it.mulders.modernrpc.rmi.shared.Fibonacci.STUB_NAME;
+
 public class RmiServerStrategy implements FibonacciServerStrategy {
-    private static final String NAME = "Fibonacci";
     private static final Logger logger = LoggerFactory.getLogger(RmiServerStrategy.class);
 
     private Registry registry;
@@ -43,7 +44,7 @@ public class RmiServerStrategy implements FibonacciServerStrategy {
                 var stub = UnicastRemoteObject.exportObject(server, 2001);
 
                 logger.debug("Binding stub in registry");
-                registry.bind(NAME, stub);
+                registry.bind(STUB_NAME, stub);
                 result.complete(null);
             } catch (final RemoteException | AlreadyBoundException e) {
                 logger.error("Could not start RMI server: {}", e.getLocalizedMessage(), e);
@@ -68,7 +69,7 @@ public class RmiServerStrategy implements FibonacciServerStrategy {
 
         logger.info("Stopping RMI server");
         try {
-            registry.unbind(NAME);
+            registry.unbind(STUB_NAME);
             UnicastRemoteObject.unexportObject(server, true);
         } catch (RemoteException | NotBoundException e) {
             logger.error( "Error while stopping RMI server: {}", e.getLocalizedMessage(), e);

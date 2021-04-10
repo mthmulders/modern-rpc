@@ -10,17 +10,6 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>client-rmi</artifactId>
-    <name>Modern RPC - Client - RMI</name>
-
-    <dependencies>
-        <dependency>
-            <groupId>it.mulders.modern-rpc</groupId>
-            <artifactId>shared-rmi</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>it.mulders.modern-rpc</groupId>
-            <artifactId>client-shared</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>client-shared</artifactId>
+    <name>Modern RPC - Client - Shared</name>
 </project>

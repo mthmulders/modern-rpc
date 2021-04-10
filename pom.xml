@@ -30,10 +30,12 @@
         <module>server/grpc</module>
         <module>server/assembly</module>
 
+        <module>client/shared</module>
         <module>client/rmi</module>
         <module>client/soap</module>
         <module>client/rest</module>
         <module>client/grpc</module>
+        <module>client/assembly</module>
     </modules>
 
     <dependencyManagement>
@@ -113,6 +115,11 @@
             <dependency>
                 <groupId>it.mulders.modern-rpc</groupId>
                 <artifactId>client-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>it.mulders.modern-rpc</groupId>
+                <artifactId>client-shared</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
